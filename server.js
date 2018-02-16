@@ -68,13 +68,19 @@ app.get("/scrape", function(req, res) {
         .children("a")
         .attr("href");
 
-      // READ ALL ARTICLES FIRST
-      // THEN if (!('key' in myObj)){}
+
+      // take the title of the article result obj and kick of a db read/find
 
 
       // Create a new Article using the `result` object built from scraping
+
+      // article.find(title = article title)...
       db.Article.create(result)
         .then(function(dbArticle) {
+          // ...if found then don't save
+          
+          // add a db.article.create if not found...
+          
           // View the added result in the console
           // console.log(dbArticle);
         })
