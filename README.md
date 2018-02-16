@@ -9,7 +9,7 @@ This application is built using Node.js Express, jQuery, Bootstrap v3, Glyphicon
 After invoking the node file (server.js), in the broswer address window (localhost:3030), the user is presented with the following screen.
 
 Main screen of New York Times Scaper
-![Main Screen 1](./public/images/scaper.jpeg)
+![Main Screen 1](./images/scaper.jpeg)
 
 
 
