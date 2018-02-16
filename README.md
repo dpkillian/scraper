@@ -3,7 +3,7 @@ Scaper is a news scaper app that grabs headlines from the New York Times and dis
 
 
 ## Description
-This application is built using Node.js Express, jQuery, Bootstrap v3, Glyphicons, body-parser and path.  It runs in the browser on localhost:3000 or is hosted on Heroku [here](https://www.heroku.com/).
+This application is built using Node.js Express, jQuery, Bootstrap v3, Glyphicons, body-parser and path.  It runs in the browser on localhost:3000 or is hosted on Heroku [here](https://pure-forest-85331.herokuapp.com/).
 
 ## Scaper Interface
 After invoking the node file (server.js), in the broswer address window (localhost:3030), the user is presented with the following screen.
