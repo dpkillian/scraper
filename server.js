@@ -43,9 +43,15 @@ mongoose.connect(MONGODB_URI, {
 
 // Routes
 
+// app.get('/', function(req, res){
+//     console.log("/ route hit");
+//     res.sendFile(__dirname+'/public/index.html'); // change the path to your index.html
+// });
+
 // A GET route for scraping the echojs website
 app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with request
+
   axios.get("https://www.nytimes.com/").then(function(response) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
     var $ = cheerio.load(response.data);
@@ -89,7 +95,7 @@ app.get("/articles", function(req, res) {
   db.Article.find({})
     .then(function(dbAllArticles) {
       // If we were able to successfully find Articles, send them back to the client
-      console.log(dbAllArticles);
+      // console.log(dbAllArticles);
       res.json(dbAllArticles);
     })
     .catch(function(err) {

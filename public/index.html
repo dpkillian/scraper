@@ -6,42 +6,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Latest compiled and minified Bootstrap CSS & JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <meta charset="UTF-8">
     <title>News Scraper</title>
     <style>
-/*      body { background-color: #F2F6D0 }
-      #wrapper {
-        width: 960px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 5%;
-      }
-      #articles {
-        display: inline-block;
-        overflow: auto;
-        width: 60%;
-        height: 700px;
-      }
-      #notes {
-        float: right;
-        width: 30%;
-      }
-      textarea, input {
-        display: block;
-        width: 100%;
-        background-color: #FCF5C7;
-      }
-      input {
-        height: 36px;
-        font-size: 24px;
-      }
-      textarea {
-        height: 200px;
-        font-size: 18px;
-      }*/
+
     </style>
   </head>
   <body>
@@ -51,31 +23,38 @@
 
     <!-- Website Banner & Description Row (1 of 2)-->
     <div class="row">
-      <div class="jumbotron">
+        <div class="jumbotron">
+          <h2 class="text-center">
+            New York Times News Scraper
+          </h2>  
+          <!-- <img src="./images/nyt.png" width="200"> -->
+          <p><strong>New York Times News Scraper</strong> is a simple news gathering tool.  Click the "Scrape NYTimes" button to gather the latest headlines from the NY Times.  The results will be displayed in a list of articles that you can click on to leave a note.  
+          </p>
+        
+          <hr>
 
-        <h2 class="text-center">
-          New York Times News Scraper
-        </h2>  
-        <p><strong>New York Times News Scraper</strong> is a simple news gathering tool.  Click the "Scrape NYTimes" button to gather the latest headlines from the NY Times.  The results will be displayed in a list of articles that you can click on to leave a note.  
-        </p>
-      
-        <hr>
-
-        <div class="text-center">
-          <a href="/scrape"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> Scrape NYTimes</button></a>
+          <div class="text-center">
+            <a href="/scrape"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> Scrape NYTimes</button></a>
+          </div>
         </div>
-
-      </div>
     </div>
+
+
 
 
     <!-- Article and Notes Row (2 of 2)-->
     <div class="row">
+
       <div class="col-md-8" id="articles">
       </div>
 
-      <div class="col-md-4" id="notes">
-      </div>      
+      <form>
+        <div class="col-md-4 panel panel-primary panel-body" id="notes">
+          <span style="color:#428bca"><strong>Notes Section</strong></span>
+          <br>
+          <span style="color:Silver"> Click on any article to add a note</span>
+        </div>      
+      </form>
 
     </div>
 
@@ -84,12 +63,10 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>
 
 
 
   </body>
 </html>
-
 

@@ -15,7 +15,7 @@ $.getJSON("/articles", function(data) {
 // Whenever someone clicks a p tag
 $(document).on("click", "p", function() {
   // Empty the notes from the note section
-  $("#notes").empty();
+  // $("#notes").empty();
   // Save the id from the p tag
   var thisId = $(this).attr("data-id");
 
@@ -30,9 +30,9 @@ $(document).on("click", "p", function() {
       // The title of the article
       $("#notes").append("<h4>" + data.title + "</h4>");
       // An input to enter a new title
-      $("#notes").append("<input id='titleinput' name='title' >");
+      $("#notes").append("<input class='form-control' id='titleinput' name='title' ><br>");
       // A textarea to add a new note body
-      $("#notes").append("<textarea id='bodyinput' name='body'></textarea>");
+      $("#notes").append("<textarea class='form-control' id='bodyinput' name='body' rows='8'></textarea><br>");
       // A button to submit a new note, with the id of the article saved to it
       $("#notes").append("<button class='btn btn-sm btn-primary' data-id='" + data._id + "' id='savenote'>Save Note</button>");
 
