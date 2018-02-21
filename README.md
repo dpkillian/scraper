@@ -1,5 +1,5 @@
 # Scraper
-Scaper is a news scaper app that grabs headlines from the New York Times and displays them without ads in a scrolling format.  The app supports a notes feature where uses can leave a comment or note associated with any artile.
+Scaper is a news aggregation app that grabs headlines from the New York Times and displays them without ads in a scrolling format.  The app supports a notes feature where uses can leave a comment or note associated with any artile.
 
 
 ## Description
